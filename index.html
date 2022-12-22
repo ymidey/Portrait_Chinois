@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portrait chinois</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Vidéo d'arrière plan du site -->
+    <div class="video-wrapped">
+        <video autoplay loop playsinline muted>
+            <source src="img/Background.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- Première section de mon site présentant mon nom, ainsi que le titre du projet et la liste de mes analogies-->
+    <header class="viewport-header">
+        <p>Yannick Midey</p>
+        <p>Mon portrait chinois</p>
+        <div class="scroller" id="scroll">
+            Si j'étais
+            <span id="move">
+                une couleur<br />
+                un film<br />
+                un lieu<br />
+                un animal<br />
+                un jeu de société<br />
+                une saison<br />
+                un personnage</br>
+            </span>
+        </div>
+        <a class="scroll-down-button"></a>
+    </header>
+
+    <!-- Section contenant les informations sur mes analogies -->
+    <section class="content">
+    </section>
+
+    <!-- div contenant un formulaire, permettant aux utilisateurs de proposer leur propre analogie-->
+    <div class="form">
+        <form action="">
+            <h1>Créer ton analogie</h1>
+            <div class="field">
+                <input type="text" id="analogie" autocomplete="off" required />
+                <label for="analogie" class="label-wrapper">
+                    <span class="label-text">
+                        Si vous auriez été...
+                    </span>
+                </label>
+            </div>
+            <div class="field">
+                <input type="text" id="valeurAnalogie" autocomplete="off" required />
+                <label for="valeurAnalogie" class="label-wrapper">
+                    <span class="label-text">
+                        Vous auriez été...
+                    </span>
+                </label>
+            </div>
+            <div class="field">
+                <input type="text" id="explication" autocomplete="off" required />
+                <label for="explication" class="label-wrapper">
+                    <span class="label-text">
+                        Votre explication :
+                    </span>
+                </label>
+            </div>
+            <div class="field">
+                <input type="text" id="image" autocomplete="off" required />
+                <label for="image" class="label-wrapper">
+                    <span class="label-text">
+                        L'url de votre image
+                    </span>
+                </label>
+            </div>
+            <div class="field">
+                <input type="email" id="email" autocomplete="off" required />
+                <label for="email" class="label-wrapper">
+                    <span class="label-text">
+                        Votre adresse Email :
+                    </span>
+                </label>
+            </div>
+            <input type="button" id="submit" value="Envoyer le formulaire">
+        </form>
+    </div>
+
+
+    <!-- Div contenant deux balises paragraphes qui au clic de l'un deux permet d'afficher la div contenant les mentions légale du site -->
+    <div class="legals_mentions_link">
+        <p class="legals legals_left">
+            mentions légals
+        </p>
+        <p class="legals legals_right">mentions légals</p>
+    </div>
+
+    <!-- div contenant les mentions légales du site web. Elle est d'abord caché puis devient visible, si l'utilisateur clique sur l'un des deux paragraphes avec la class="legals"-->
+    <div class="mentions_legales modal-invisible">
+        <h1>Mentions légales</h1>
+        <!-- Paragraphe permettant la fermeture du modal contenant les mentions légales -->
+        <p class="closeMentionsLegales"></p>
+        <div class="content">
+            <p>Projet réalisé dans le cadre de la SAE 1.05 par Yannick Midey étudiant de 1ère années de BUT MMI.
+                <br><br>
+                2 rue Albert Einstein, 77420 Champs-sur-Marne, France
+                <br><br>
+                <u>Crédit</u> :
+                Vidéo d'arrière-plan libre de droit disponible sur ici :
+                https://www.pexels.com/fr-fr/video/noir-et-blanc-nature-nuages-foret-4999944/,
+                <br><br>
+                Toutes les images présentées sur ce site sont libres de droit.<br>
+                Dans l'ordre voici leurs liens :<br><br>
+                Photo section couleur : https://unsplash.com/fr/photos/s1a3f43C-BE<br><br>
+                Photo section film : https://unsplash.com/fr/photos/ASM_rxhmhzo<br><br>
+                Photo section lieu : https://unsplash.com/fr/photos/LPKk3wtkC-g<br><br>
+                Photo section animal : https://unsplash.com/fr/photos/iUA1cea8QiY<br><br>
+                Photo section jeu de société : Photographie personnel<br><br>
+                Photo section saison :https://unsplash.com/fr/photos/XiRjzUkIa-4<br><br>
+                Photo section personnage : Image générée par l'intelligence artificielle Dall-E puis modification
+                personnel à l'aide de Photoshop
+                <br><br>
+                Le design du formulaire a été repris (avec modification personnel) d'un tutoriel disponible sur la
+                chaine de @davidm_ai sur Tik Tok <br><br>
+                Le design des bordures des images illustrant mes analogies a été généré à l'aide du site
+                https://9elements.github.io/fancy-border-radius/ <br><br>
+                L'effet de scroll du texte dans mon span présentant mes analogies a été repris (avec modification
+                personnel) d'un code réalisé par Noah Calmette <br><br>
+                <u>Information sur l'hébergeur :</u>
+                <br>
+                Adresse : 2 rue Albert Einstein, 77420 Champs-sur-Marne, France
+                <br>
+                Téléphone : 01 60 95 75 00
+                <br>
+                Adresse email : webmaster@univ-eiffel.fr
+                <br><br>
+                Lors de la création de votre propre analogie, vos informations sont transmises dans une base de
+                données hébérgé et géré par Philipe Gambette. Pour supprimer vos données, veuillez contacter
+                philipe.gambette@univ-eiffel.fr.
+                <br><br>
+                Conformément à l'Article 15 du Règlement Général sur la Protection des Données, vous disposez d'un
+                droit
+                d'accès aux informations à caractères personnelles vous concernants.
+                <br>
+                Conformément à l'article 16 du Règlement Général sur la Protection des Données, vous disposez d'un
+                droit
+                de
+                rectification des données à caractères personnelles vous concernants, si elles sont inexactes.
+                <br>
+                Conformément à l'article 17 du Règlement Général sur la Protection des Données, vous disposez d'un
+                droit
+                à
+                l'oubli de vos informations à caractère personnelles vous concernants en contactant le responsable de
+                traitement philipe.gambette@univ-eiffel.fr
+                <br><br>
+                Pour toute question relative à la collecte ou au traitement des données personnelles, veuillez
+                contacter
+                philipe.gambette@univ-eiffer.fr
+                <br><br>
+                Si vous ne faites aucune demande de suppression de vos informations personnelles, vos informations vous
+                concernants, seront automatiquement
+                supprimées en été 2023.
+            </p>
+        </div>
+    </div>
+
+</body>
+<script src="script/script.js"></script>
+
+</html>
