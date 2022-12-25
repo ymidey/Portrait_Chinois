@@ -6,15 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portrait chinois</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
     <!-- Vidéo d'arrière plan du site -->
     <div class="video-wrapped">
         <video autoplay loop playsinline muted>
-            <source src="img/Background.mp4" type="video/mp4">
+            <source src="images/Background.mp4" type="video/mp4">
         </video>
     </div>
 
@@ -43,8 +43,8 @@
 
     <!-- div contenant un formulaire, permettant aux utilisateurs de proposer leur propre analogie-->
     <div class="form">
-        <form action="">
-            <h1>Créer ton analogie</h1>
+        <form id="myForm" action="">
+            <h1 class="title">Suggère ton analogie que j'ajouterai au site, en répondant à ce formulaire</h1>
             <div class="field">
                 <input type="text" id="analogie" autocomplete="off" required />
                 <label for="analogie" class="label-wrapper">
@@ -109,7 +109,7 @@
                 2 rue Albert Einstein, 77420 Champs-sur-Marne, France
                 <br><br>
                 <u>Crédit</u> :
-                Vidéo d'arrière-plan libre de droit disponible sur ici :
+                Vidéo d'arrière-plan libre de droit disponible ici :
                 https://www.pexels.com/fr-fr/video/noir-et-blanc-nature-nuages-foret-4999944/,
                 <br><br>
                 Toutes les images présentées sur ce site sont libres de droit.<br>

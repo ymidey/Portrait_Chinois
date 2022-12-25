@@ -1,0 +1,422 @@
+/* Importation de la police Fugaz */
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Archivo', sans-serif;
+    color: #fff;
+    text-shadow: 1px 1px black;
+    scroll-snap-type: y mandatory;
+}
+
+/* Alignement centré des div et section au scroll */
+.viewport-header, .section_analogie, .form {
+    scroll-snap-align: center;
+}
+
+/* Css de ma vidéo */
+.video-wrapped video {
+    object-fit: cover;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+
+/* Css de mon Header */
+.viewport-header {
+    position: relative;
+    font-size: 3.8rem;
+    line-height: 180px;
+    text-align: center;
+    font-family: 'Fugaz One', cursive;
+}
+
+/* Css de ma class scroller de mon Header */
+.scroller {
+    font-size: 3.7rem;
+    line-height: 3.5em;
+    position: relative;
+    overflow: hidden;
+    left: -7%;
+}
+
+/* Css de mes span situé dans la div ayant l'id scroll situé dans mon Header */
+#scroll>span {
+    display: inline-block;
+    position: absolute;
+    animation: slide 20s infinite 1.5s;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 20px;
+}
+
+/* Paramètre des tailles de mes polices en fonction de la largueur de l'écran */
+@media screen and (max-width: 1400px) {
+    .viewport-header {
+        font-size: 2.9rem;
+    }
+
+    #scroll {
+        font-size: 2.4rem;
+        right: 100%;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .viewport-header {
+        font-size: 2.1rem;
+    }
+
+    #scroll {
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .viewport-header {
+        font-size: 2.0rem;
+    }
+
+    #scroll {
+        text-align: left;
+        left: 26%;
+        font-size: 1.5rem;
+    }
+}
+
+/* Défilment de mes analogies avec un scroll  automatique */
+@keyframes slide {
+    0% {
+        top: 0;
+    }
+
+    12.5% {
+        top: -3.5em;
+    }
+
+    25% {
+        top: -7em;
+    }
+
+    37.5% {
+        top: -10.5em;
+    }
+
+    50% {
+        top: -14em;
+    }
+
+    62.5% {
+        top: -17.5em;
+    }
+
+    75% {
+        top: -21em;
+    }
+
+    87.5% {
+        top: -24.5em;
+    }
+
+    100% {
+        top: 0;
+    }
+}
+
+.viewport-header a.scroll-down-button:after {
+    content: "";
+    vertical-align: middle;
+    border-top: 12px solid;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+}
+
+.viewport-header a.scroll-down-button:hover {
+    color: #ac1de1;
+    cursor: pointer;
+}
+
+
+/* Css de mes sections analogies */
+.content {
+    margin: 0 auto;
+    width: 85%;
+}
+
+.section_analogie {
+    border-radius: 1%;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 66vh;
+    margin-top: 17vh;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 5px 5px 10px 1px rgba(0, 0, 0, .3);
+}
+
+.section_analogie img {
+    max-height: 40%;
+    max-width: 30%;
+    position: absolute;
+    right: 3%;
+    border-radius: 39% 61% 61% 39% / 56% 27% 73% 44%
+}
+
+@media screen and (max-width: 800px) {
+    .section_analogie img {
+        transform: scale(0.8);
+    }
+}
+
+.section_analogie p {
+    max-width: 70%;
+    text-align: justify;
+    margin-right: 3%;
+}
+
+.section_analogie h2 {
+    font-size: 1.4rem;
+    position: absolute;
+    top: 2%;
+}
+
+.section_analogie h1 {
+    font-size: 1.6rem;
+    position: absolute;
+    top: 17%;
+}
+
+.section_analogie.couleur {
+    background-color: rgba(205, 75, 237, 0.2);
+}
+
+.section_analogie.film {
+    background-color: rgba(74, 74, 186, 0.2);
+}
+
+.section_analogie.lieu {
+    background-color: rgb(13, 86, 13, 0.2);
+}
+
+.section_analogie.animal {
+    background-color: rgba(47, 47, 47, 0.2);
+}
+
+.section_analogie.jeu {
+    background-color: rgb(5, 70, 57, 0.2);
+}
+
+.section_analogie.saison {
+    background-color: rgba(229, 215, 215, 0.2);
+}
+
+.section_analogie.personnage {
+    background-color: rgba(87, 1, 1, 0.2);
+}
+
+/* Css de mon formulaire */
+.form {
+    position: relative;
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    background-color: rgba(40, 123, 195, 0.1);
+    border-radius: 15%;
+    padding: 1%;
+    padding-bottom: 3%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.form .title {
+    font-size: 1.8rem;
+    padding: 2%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+@media screen and (max-width: 800px) {
+    .form .title {
+        font-size: 1.4rem;
+    }
+}
+
+.form .field {
+    font-size: 1.2rem;
+    position: relative;
+    height: 52px;
+    width: 50%;
+    margin: auto;
+    color: white;
+    overflow: hidden;
+    margin-bottom: 3%;
+}
+
+.form .field input {
+    height: 100%;
+    width: 100%;
+    color: white;
+    line-height: 52px;
+    outline: 0;
+    background-color: inherit;
+    padding-top: 25px;
+    border: none;
+    box-sizing: border-box;
+}
+
+.form .field .label-wrapper {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0;
+    background-color: inherit;
+    left: 0;
+    pointer-events: none;
+    border-bottom: 1px solid white;
+}
+
+.form .field .label-wrapper::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #ac1de1;
+    left: 0;
+    bottom: -1px;
+    transform: translateX(-100%);
+    transition: transform 0.2s ease;
+}
+
+.form .field .label-text {
+    position: absolute;
+    bottom: 5px;
+    left: 0px;
+    transition: all 0.2s ease;
+}
+
+.form .field input:focus+.label-wrapper .label-text {
+    color: rgb(255, 128, 128);
+    font-size: 1.125rem;
+    transform: translateY(-120%);
+}
+
+.form .field input:valid+.label-wrapper .label-text {
+    font-size: 1.125rem;
+    color: #81ef5c;
+    transform: translateY(-120%);
+}
+
+.form .field input:focus+.label-wrapper::after,
+.form .field input:valid+.label-wrapper::after {
+    transform: translateX(0%);
+}
+
+.form #submit {
+    font-size: 1.04rem;
+    border: none;
+    margin-top: 2%;
+    border-radius: 10%;
+    padding: 2%;
+    color: rgb(255, 238, 238);
+    background-color: rgba(191, 85, 230, 0.7);
+    transition: all 0.6s ease-out;
+}
+
+.form #submit:hover {
+    transform: scale(1.07, 1.07);
+}
+
+/* Css de mes deux boutons mentions légals */
+.legals_mentions_link p {
+    position: fixed;
+    font-size: 1.83rem;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    top: 47%;
+    text-shadow: 1px 1px 2px black;
+    transform: rotate(-90deg);
+
+}
+
+.legals_mentions_link p:hover {
+    cursor: pointer;
+}
+
+.legals_mentions_link .legals_right {
+    right: -150px;
+    margin-right: 0.5%;
+    transform: rotate(90deg);
+}
+
+.legals_mentions_link .legals_left {
+    left: -150px;
+    margin-left: 0.5%;
+}
+
+/* Css de ma div mentions légals */
+.mentions_legales {
+    position: fixed;
+    background-color: rgba(55, 54, 54, 0.9);
+    padding: 2rem;
+    border-radius: 30px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 50vh;
+    width: 60%;
+}
+
+.mentions_legales .content {
+    max-height: 40vh;
+    padding: 1.6%;
+    text-align: justify;
+    overflow: auto;
+}
+
+.mentions_legales .closeMentionsLegales {
+    position: absolute;
+    right: 32px;
+    top: 32px;
+    width: 32px;
+    height: 32px;
+    opacity: 0.7;
+}
+
+.mentions_legales .closeMentionsLegales:hover {
+    opacity: 1;
+}
+
+.mentions_legales .closeMentionsLegales:before, .closeMentionsLegales:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 33px;
+    width: 2px;
+    background-color: rgb(255, 255, 255);
+}
+
+.mentions_legales .closeMentionsLegales:before {
+    transform: rotate(45deg);
+}
+
+.mentions_legales .closeMentionsLegales:after {
+    transform: rotate(-45deg);
+}
+
+.modal-invisible {
+    visibility: hidden;
+}
+
+
+.modal-visible {
+    visibility: visible;
+}

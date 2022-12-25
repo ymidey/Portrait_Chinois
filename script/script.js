@@ -52,5 +52,6 @@ submit.addEventListener("click", function () {
                 console.log(data);
             });
         });
+        document.getElementById("myForm").reset();
     }
 }) 
