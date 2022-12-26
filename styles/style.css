@@ -335,6 +335,25 @@ html, body {
     transform: scale(1.07, 1.07);
 }
 
+.form .response {
+    display: inline-block;
+    background-color: rgb(50, 149, 50);
+    color: white;
+    border: 2px rgb(1, 69, 1);
+    width: 60%;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 3%;
+}
+
+.response_invisible {
+    visibility: hidden;
+}
+
+.response_visible {
+    visibility: visible;
+}
+
 /* Css de mes deux boutons mentions légals */
 .legals_mentions_link p {
     position: fixed;
