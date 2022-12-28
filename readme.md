@@ -34,7 +34,7 @@ https://etudiant.u-pem.fr/~yannick.midey/portrait-chinois_Yannick_Midey/
 
 - Dans la partie droite de XAMPP, cliquer sur l'onglet "explorer", suite à cela, une nouvelle fenêtre s'ouvrira, vous emmenant directement vers les sous dossiers de XAMPP.
 
-- Dans tout ses sous dossiers, chercher le dossier nommé "htdocs" et déposer y votre dossier "portrait_chinois" téléchargé antérieurement
+- Dans tout ses sous dossiers, chercher le dossier nommé "htdocs" et déposer y votre dossier "portrait-chinois_Yannick_Midey" téléchargé antérieurement
 
 - Ensuite, lancer le module "Apache" en cliquant sur le bouton "start" correspondant à ce module
 
