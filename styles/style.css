@@ -11,7 +11,7 @@ html, body {
     scroll-snap-type: y mandatory;
 }
 
-/* Alignement centré des div et section au scroll */
+/* Alignement horizontal centrés des div et section au scroll */
 .viewport-header, .section_analogie, .form {
     scroll-snap-align: center;
 }
@@ -438,4 +438,61 @@ html, body {
 
 .modal-visible {
     visibility: visible;
+}
+
+#button {
+    display: inline-block;
+    background-color: #FF9800;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s,
+        opacity .5s, visibility .5s;
+    opacity: 1;
+    z-index: 1000;
+}
+
+#button::after {
+    font-weight: normal;
+    font-style: normal;
+    font-size: 2em;
+    line-height: 50px;
+    color: #fff;
+}
+
+#button:hover {
+    cursor: pointer;
+    background-color: #333;
+}
+
+#button:active {
+    background-color: #555;
+}
+
+#button.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* CSS */
+#scroll-up-button {
+    position: fixed;
+    bottom: 23px;
+    right: 23px;
+    display: block;
+    background: #333;
+    transition: opacity 0.5s;
+    color: #fff;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+    opacity: 0;
 }
