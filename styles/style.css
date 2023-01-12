@@ -1,7 +1,6 @@
 /* Importation de la police Fugaz */
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap');
 
-
 html, body {
     margin: 0;
     padding: 0;
@@ -11,12 +10,12 @@ html, body {
     scroll-snap-type: y mandatory;
 }
 
-/* Alignement horizontal centrés des div et section au scroll */
+/* Alignement vertical centrées des divs et sections au scroll */
 .viewport-header, .section_analogie, .form {
     scroll-snap-align: center;
 }
 
-/* Css de ma vidéo */
+/* CSS de ma vidéo d'arriere-plan */
 .video-wrapped video {
     object-fit: cover;
     position: fixed;
@@ -27,16 +26,17 @@ html, body {
 }
 
 
-/* Css de mon Header */
+/* CSS de ma div Header */
 .viewport-header {
     position: relative;
+    padding-top: 2rem;
     font-size: 3.8rem;
     line-height: 180px;
     text-align: center;
     font-family: 'Fugaz One', cursive;
 }
 
-/* Css de ma class scroller de mon Header */
+/* CSS de ma class scroller de ma div Header */
 .scroller {
     font-size: 3.7rem;
     line-height: 3.5em;
@@ -45,7 +45,7 @@ html, body {
     left: -7%;
 }
 
-/* Css de mes span situé dans la div ayant l'id scroll situé dans mon Header */
+/* CSS de mes spans situés dans la div ayant l'id scroll située dans ma div Header */
 #scroll>span {
     display: inline-block;
     position: absolute;
@@ -90,7 +90,7 @@ html, body {
     }
 }
 
-/* Défilment de mes analogies avec un scroll  automatique */
+/* Défilement de mes analogies avec un scroll automatique */
 @keyframes slide {
     0% {
         top: 0;
@@ -129,6 +129,7 @@ html, body {
     }
 }
 
+/* CSS de mon bouton ayant la class 'scroll-down-button' */
 .viewport-header a.scroll-down-button:after {
     content: "";
     vertical-align: middle;
@@ -137,13 +138,14 @@ html, body {
     border-left: 12px solid transparent;
 }
 
+/* Changement de la couleur de mon bouton, ainsi que mon pointeur au passage de la soruis sur le bouton */
 .viewport-header a.scroll-down-button:hover {
     color: #ac1de1;
     cursor: pointer;
 }
 
 
-/* Css de mes sections analogies */
+/* CSS de ma div contenant les sections de mes analogies */
 .content {
     margin: 0 auto;
     width: 85%;
@@ -195,6 +197,7 @@ html, body {
     top: 17%;
 }
 
+/* Couleur d'arrière-plan de mes sections en fonction de leur class secondaire */
 .section_analogie.couleur {
     background-color: rgba(205, 75, 237, 0.2);
 }
@@ -223,7 +226,7 @@ html, body {
     background-color: rgba(87, 1, 1, 0.2);
 }
 
-/* Css de mon formulaire */
+/* CSS de mon formulaire */
 .form {
     position: relative;
     margin: auto;
@@ -244,6 +247,7 @@ html, body {
     padding-right: 3%;
 }
 
+/* Changement de la taille de la police de mon titre de mon formulaire en fonction de la taille de l'écran */
 @media screen and (max-width: 800px) {
     .form .title {
         font-size: 1.4rem;
@@ -303,12 +307,15 @@ html, body {
     transition: all 0.2s ease;
 }
 
+/* Changement de la couleur de mon texte contenu dans ma div en fonction de la validité des valeurs reçu dans le formulaire */
+/* Si la couleur est orangé, alors la valeur reçue, n'est pas la valeur attendue de l'attribut required du formulaire. */
 .form .field input:focus+.label-wrapper .label-text {
     color: rgb(255, 128, 128);
     font-size: 1.125rem;
     transform: translateY(-120%);
 }
 
+/* Si la couleur est verte, alors la valeur reçue, est la valeur attendue de l'attribut required du formulaire. */
 .form .field input:valid+.label-wrapper .label-text {
     font-size: 1.125rem;
     color: #81ef5c;
@@ -320,6 +327,7 @@ html, body {
     transform: translateX(0%);
 }
 
+/*  CSS du bouton submit situé dans le formulaire ayant l'id #submit */
 .form #submit {
     font-size: 1.04rem;
     border: none;
@@ -335,6 +343,7 @@ html, body {
     transform: scale(1.07, 1.07);
 }
 
+/* CSS de mon texte informant l'utilisateur de la bonne réception de son analogie à la base de données */
 .form .response {
     display: inline-block;
     background-color: rgb(50, 149, 50);
@@ -346,10 +355,12 @@ html, body {
     border-radius: 3%;
 }
 
+/* Si aucune analogie n'a été envoyée par l'utilisateur depuis la dernière connexion sur le site, la div informant l'utilisateur de la bonne réception de son analogie ne sera pas affichée */
 .response_invisible {
     visibility: hidden;
 }
 
+/* Si l'utilisateur a envoyé son analogie et l'api à repondu qu'elle l'a bien reçue, le texte informant l'utilisateur de la bonne reception de son analogie sera affiché */
 .response_visible {
     visibility: visible;
 }
@@ -363,13 +374,14 @@ html, body {
     top: 47%;
     text-shadow: 1px 1px 2px black;
     transform: rotate(-90deg);
-
 }
 
+/* Changement du pointer de la souris, si l'utilisateur passe avec sa souris sur le texte situé dans la div ayant la class 'legals_mentions_link' */
 .legals_mentions_link p:hover {
     cursor: pointer;
 }
 
+/* Positionnement de mes deux textes mentions légales */
 .legals_mentions_link .legals_right {
     right: -150px;
     margin-right: 0.5%;
@@ -381,11 +393,11 @@ html, body {
     margin-left: 0.5%;
 }
 
-/* Css de ma div mentions légals */
+/* CSS de ma div (modal) mentions légals */
 .mentions_legales {
     position: fixed;
     background-color: rgba(55, 54, 54, 0.9);
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 30px;
     top: 50%;
     left: 50%;
@@ -412,6 +424,7 @@ html, body {
 
 .mentions_legales .closeMentionsLegales:hover {
     opacity: 1;
+    cursor: pointer;
 }
 
 .mentions_legales .closeMentionsLegales:before, .closeMentionsLegales:after {
@@ -440,45 +453,7 @@ html, body {
     visibility: visible;
 }
 
-#button {
-    display: inline-block;
-    background-color: #FF9800;
-    width: 50px;
-    height: 50px;
-    text-align: center;
-    border-radius: 4px;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    transition: background-color .3s,
-        opacity .5s, visibility .5s;
-    opacity: 1;
-    z-index: 1000;
-}
-
-#button::after {
-    font-weight: normal;
-    font-style: normal;
-    font-size: 2em;
-    line-height: 50px;
-    color: #fff;
-}
-
-#button:hover {
-    cursor: pointer;
-    background-color: #333;
-}
-
-#button:active {
-    background-color: #555;
-}
-
-#button.show {
-    opacity: 1;
-    visibility: visible;
-}
-
-/* CSS */
+/* CSS de mon bouton permettant */
 #scroll-up-button {
     position: fixed;
     bottom: 23px;

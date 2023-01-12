@@ -1,0 +1,51 @@
+[
+    {
+        "id": "couleur",
+        "analogie": "une couleur",
+        "valeurAnalogie": "le violet",
+        "explication": "Cette couleur créée par le mélange entre la couleur rouge, et la couleur bleue, est à mes yeux, la plus belle couleur. Elle m'inspire la spiritualité, le rêve et le mystère. ",
+        "image": "images/Violet_img.jpg"
+    },
+    {
+        "id": "film",
+        "analogie": "le film",
+        "valeurAnalogie": "Interstellar",
+        "explication": "Véritable oeuvre d'art, le film de science-fiction Interstellar est pour moi, l'un des films les plus beaux jamais réalisé. Le travail du réalisateur Christopher Nolan, des differents acteurs et le talent d'Hans Zimmer arrivent à transmettre une grande émotion et nous faire voyager hors de nous.",
+        "image": "images/Interstellar_img.jpg"
+    },
+    {
+        "id": "lieu",
+        "analogie": "un lieu",
+        "valeurAnalogie": "la forêt",
+        "explication": "La forêt représente pour moi, le calme, la tranquillité et la liberté. Quoi de mieux, qu'une randonnée en forêt pour se ressourcer et profiter d'un paysage naturel, non détruit par l'espèce humaine. ",
+        "image": "images/Foret_img.jpg"
+    },
+    {
+        "id": "animal",
+        "analogie": "un animal",
+        "valeurAnalogie": "le loup,",
+        "explication": "Cet animal représente pour moi, l'intelligence, le courage, et la loyauté, des valeurs auxquelles j'aspire particulièrement. Son lien social envers sa meute donc avec les personnes avec lesquels il a confiance, font de lui, l'animal qui me représente le mieux",
+        "image": "images/Loup_img.jpg"
+    },
+    {
+        "id": "jeu",
+        "analogie": "un jeu de société",
+        "valeurAnalogie": "la série de jeu de société Escape Box,",
+        "explication": "Parce que la série de jeu de société Escape Box reprend les bases de l'escape game réelle en alliant le travail d'équipe, la résolution d'énigme et la recherche d'information, c'est l'un des jeux de sociétés que je préfère. Aimant les jeux d'enquête et de logique, c'est un jeu que j'affectionne particulièrement.",
+        "image": "images/EscapeBox_img.jpg"
+    },
+    {
+        "id": "saison",
+        "analogie": "une saison",
+        "valeurAnalogie": "l'hiver,",
+        "explication": "La saison de l'hiver, est selon moi le moment de l'année des retrouvailles avec la famille eloignée, des chocolats chauds emmitouflé sous une couverture devant un film de Noël. C'est aussi la saison des vitrines illuminées, des chants de Noël et des paysages recouverts de neige. Mais, c'est aussi et surtout la saison de la raclette, et ça, c'est très important. ",
+        "image": "images/Hiver_img.jpg"
+    },
+    {
+        "id": "personnage",
+        "analogie": "un personnage",
+        "valeurAnalogie": "Mason (Dipper) Pines,",
+        "explication": "Car je trouve que ce personnage du dessin animé 'Souvenir de Gravity Falls', me ressemble dans ses traits de caractère et dans ce qu'il aime. De nature curieux et rationnel, depuis qu'il a retrouvé un journal montrant des phénoménes paranormaux et les secrets de sa ville de vacance 'Gravity Falls', il adore partir à l'aventure essayer de résoudres les mystères de sa ville avec l'aide de sa soeur Mabel. ",
+        "image": "images/Dipper_Pines_img.jpg"
+    }
+]

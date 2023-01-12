@@ -26,15 +26,15 @@ https://etudiant.u-pem.fr/~yannick.midey/portrait-chinois/
 
 ##### Pour récupérer le projet et l'installer sur un serveur local XAMPP, il faudra réaliser ses actions :
 
-- Installer XAMPP sur votre ordinateur si ce n'est pas déjà fait.
+- Installer XAMPP sur votre ordinateur si ce n'est pas déjà fait. 
 
 - Installer le projet "portrait_chinois_Yannick_Midey"
 
 - Lancer l'application XAMPP
 
-- Dans la partie droite de XAMPP, cliquer sur l'onglet "explorer", suite à cela, une nouvelle fenêtre s'ouvrira, vous emmenant directement vers les sous dossiers de XAMPP.
+- Dans la partie droite de XAMPP, cliquer sur l'onglet "explorer", suite à cela, une nouvelle fenêtre s'ouvrira, vous emmenant directement vers les sous-dossiers de XAMPP.
 
-- Dans tout ses sous dossiers, chercher le dossier nommé "htdocs" et déposer y votre dossier "portrait_chinois" téléchargé antérieurement
+- Dans tout ces sous-dossiers, chercher le dossier nommé "htdocs" et déposé y votre dossier "portrait_chinois" téléchargé antérieurement
 
 - Ensuite, lancer le module "Apache" en cliquant sur le bouton "start" correspondant à ce module
 

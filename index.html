@@ -8,6 +8,7 @@
     <title>Portrait chinois</title>
     <link rel="stylesheet" href="styles/style.css">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
 </head>
 
 <body>
@@ -25,28 +26,29 @@
         <div class="scroller" id="scroll">
             Si j'étais
             <span id="move">
-                une couleur<br />
-                un film<br />
-                un lieu<br />
-                un animal<br />
-                un jeu de société<br />
-                une saison<br />
-                un personnage</br>
+                une couleur<br>
+                un film<br>
+                un lieu<br>
+                un animal<br>
+                un jeu de société<br>
+                une saison<br>
+                un personnage<br>
             </span>
         </div>
         <a class="scroll-down-button"></a>
     </header>
 
-    <!-- Section contenant les informations sur mes analogies -->
-    <section class="content">
-    </section>
+    <!-- div contenant les informations sur mes analogies -->
+    <div class="content">
+    </div>
+
 
     <!-- div contenant un formulaire, permettant aux utilisateurs de proposer leur propre analogie-->
     <div class="form">
-        <form id="myForm" action="">
+        <form id="myForm">
             <h1 class="title">Suggère ton analogie que j'ajouterai au site, en répondant à ce formulaire</h1>
             <div class="field">
-                <input type="text" id="analogie" autocomplete="off" required />
+                <input type="text" id="analogie" autocomplete="off" required>
                 <label for="analogie" class="label-wrapper">
                     <span class="label-text">
                         Si vous auriez été...
@@ -54,7 +56,7 @@
                 </label>
             </div>
             <div class="field">
-                <input type="text" id="valeurAnalogie" autocomplete="off" required />
+                <input type="text" id="valeurAnalogie" autocomplete="off" required>
                 <label for="valeurAnalogie" class="label-wrapper">
                     <span class="label-text">
                         Vous auriez été...
@@ -62,7 +64,7 @@
                 </label>
             </div>
             <div class="field">
-                <input type="text" id="explication" autocomplete="off" required />
+                <input type="text" id="explication" autocomplete="off" required>
                 <label for="explication" class="label-wrapper">
                     <span class="label-text">
                         Votre explication :
@@ -70,15 +72,15 @@
                 </label>
             </div>
             <div class="field">
-                <input type="text" id="image" autocomplete="off" required />
+                <input type="text" id="image" autocomplete="off" required>
                 <label for="image" class="label-wrapper">
                     <span class="label-text">
-                        L'url de votre image
+                        L'url de votre image :
                     </span>
                 </label>
             </div>
             <div class="field">
-                <input type="email" id="email" autocomplete="off" required />
+                <input type="email" id="email" autocomplete="off" required>
                 <label for="email" class="label-wrapper">
                     <span class="label-text">
                         Votre adresse Email :
@@ -107,13 +109,13 @@
         <!-- Paragraphe permettant la fermeture du modal contenant les mentions légales -->
         <p class="closeMentionsLegales"></p>
         <div class="content">
-            <p>Projet réalisé dans le cadre de la SAE 1.05 par Yannick Midey étudiant de 1ère année de BUT MMI.
+            <p>Site réalisé dans le cadre de la SAE 1.05 par Yannick Midey étudiant de 1ère année de BUT MMI.
                 <br><br>
-                <u>Crédit</u> :<br>
+                <u>Crédit</u> :<br><br>
                 Vidéo d'arrière-plan libre de droit, disponible ici :
                 https://www.pexels.com/fr-fr/video/noir-et-blanc-nature-nuages-foret-4999944/,
                 <br><br>
-                Toutes les images présentées sur ce site sont libres de droit.<br>
+                Toutes les images présentées sur ce site sont libres de droits.<br><br>
                 Dans l'ordre voici leurs liens :<br><br>
                 Photo section couleur : https://unsplash.com/fr/photos/s1a3f43C-BE<br><br>
                 Photo section film : https://unsplash.com/fr/photos/ASM_rxhmhzo<br><br>
@@ -125,11 +127,9 @@
                 personnel à l'aide de Photoshop
                 <br><br>
                 Le design du formulaire a été repris (avec modification personnel) d'un tutoriel disponible sur la
-                chaine de @davidm_ai sur Tik Tok <br><br>
+                chaine de @davidm_ai sur TikTok <br><br>
                 Le design des bordures des images illustrant mes analogies a été généré à l'aide du site
                 https://9elements.github.io/fancy-border-radius/ <br><br>
-                L'effet de scroll du texte dans mon span présentant mes analogies a été repris (avec modification
-                personnel) d'un code réalisé par Noah Calmette <br><br>
                 <u>Information sur l'hébergeur :</u>
                 <br>
                 Adresse : 2 rue Albert Einstein, 77420 Champs-sur-Marne, France
@@ -138,7 +138,8 @@
                 <br>
                 Adresse email : webmaster@univ-eiffel.fr
                 <br><br>
-                Lors de la création de votre propre analogie, vos informations sont transmises dans une base de
+                Lors de la création de votre propre analogie, vos informations, notament votre adresse mail sont
+                transmises dans une base de
                 données hébérgé et géré par Philipe Gambette. Pour supprimer vos données, veuillez contacter
                 philipe.gambette@univ-eiffel.fr.
                 <br><br>
@@ -165,7 +166,8 @@
                 Si vous ne faites aucune demande de suppression de vos informations personnelles, vos informations
                 vous
                 concernants, seront automatiquement
-                supprimées en été 2023.
+                supprimées en été 2023.<br><br>
+                ©Yannick Midey, 2023.
             </p>
         </div>
     </div>
