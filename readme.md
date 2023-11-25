@@ -20,7 +20,7 @@ Le portrait chinois consiste à décrire votre caractère et vos goûts au trave
 
 # Lien du site web
 
-[https://etudiant.u-pem.fr/~yannick.midey/portrait-chinois/](https://ymidey.github.io/Portrait_Chinois/)
+[https://ymidey.github.io/Portrait_Chinois/](https://ymidey.github.io/Portrait_Chinois/)
 
 # Installation du projet sur un serveur XAMPP
 
