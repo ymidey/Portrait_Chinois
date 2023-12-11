@@ -36,32 +36,6 @@ closeMentionsLegales.addEventListener("click", function () {
     modal.classList.add("modal-invisible");
 });
 
-/* Récupération des valeurs de mon formulaire */
-const resAnalogie = document.querySelector("#analogie");
-const resValeurAnalogie = document.querySelector("#valeurAnalogie");
-const resExplication = document.querySelector("#explication");
-const resImage = document.querySelector("#image");
-const resEmail = document.querySelector("#email");
-
-const submit = document.querySelector("#submit");
-
-/* Code permettant l'envoi à l'api des informations récupérées dans le formulaire ayant la class "form" */
-submit.addEventListener("click", function () {
-    let urlVisitee = "https://perso-etudiant.u-pem.fr/~gambette/portrait/api.php?format=json&courriel=" + resEmail.value + "&login=yannick.midey&message=Si jétais " + resAnalogie.value + ", je serais " + resValeurAnalogie.value + "," + resExplication.value + ". L'urld de l'image que vous nous avez fourni : " + resImage.value;
-    if (window.confirm("Voici les informations que vous nous avez transmis : \n Si vous auriez été " + resAnalogie.value + ", vous auriez été " + resValeurAnalogie.value + ". \n Votre explication : " + resExplication.value + ". \n L'url de votre image : " + resImage.value + ". \n Votre adresse mail : " + resEmail.value + ". \n Etes-vous sûr de vouloir envoyer ses informations ?")) {
-        fetch(urlVisitee).then(function (response) {
-            response.json().then(function (data) {
-                console.log("Réponse reçue : ");
-                console.log(data);
-            });
-        });
-        document.getElementById("myForm").reset();
-        const response = document.querySelector('.response');
-        response.classList.remove("response_invisible");
-        response.classList.add("response_visible");
-    }
-});
-
 
 const content = document.querySelector('.content');
 const btn_Up = document.getElementById('scroll-up-button');
