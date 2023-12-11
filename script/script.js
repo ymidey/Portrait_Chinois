@@ -39,7 +39,7 @@ closeMentionsLegales.addEventListener("click", function () {
 const content = document.querySelector('.content');
 const btn_Up = document.getElementById('scroll-up-button');
 
-/* Code permettant d'afficher le bouton ayant la class "scroll-up-button" uniquement si */
+/* Code permettant d'afficher le bouton ayant la class "scroll-up-button" */
 window.addEventListener('scroll', () => {
     if (window.scrollY >= content.offsetTop) {
         btn_Up.classList.remove('hidden');
