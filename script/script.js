@@ -14,7 +14,6 @@ fetch('data/analogies.json').then(function (response) {
 const button = document.querySelector("a.scroll-down-button");
 
 button.addEventListener("click", function () {
-    console.log('test')
     window.scrollBy({ top: window.innerHeight, behavior: 'smooth' });
 });
 
